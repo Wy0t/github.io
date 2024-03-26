@@ -1,0 +1,48 @@
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .main_content-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main_content-headshot{
+    height: 350px;
+    width: 350px;
+    padding-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .main_content-social{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .main_content-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 370px;
+    padding-left: 6%;
+  }
+  
+  .main_content-social a:not(:last-child) {
+    margin-right: 20px; /* 设置照片之间的间距 */
+  }
+  
+  .main_content-ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 80%;
+  }
+  
+  .main_content-li{
+    margin-bottom: 10px;
+  }

@@ -1,5 +1,5 @@
 // main_content.js
-import './Main_content.css';
+import '.././css/Main_content.css';
 import headshot from '../headshot.jpg';
 import facebook from '.././icon/facebook.png';
 import ig from '.././icon/instagram.png';

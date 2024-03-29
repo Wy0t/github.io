@@ -5,35 +5,18 @@
   EEEEEE
 */
 import React from 'react';
-import './App.css';
-import Navbar from '.././components/Navbar/Navbar';
-import Portfolio from '.././portfolio/Portfolio';
-import Footer from '.././components/Footer/Footer';
-import Main_content from '.././Content/Main_content';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Githubapi from '.././githubapi/githubapi';
+import { Routes, Route } from 'react-router-dom';
+import Main_Page from '.././Full_Page/Main_Page';
+import Github_Page from '.././Full_Page/Github_Page';
 
 function App() {
   return (
-      <>
-      <Router basename='/github.io'>   
-        <Navbar />
-
-        <div className="App">
-          <Routes>
-            <Route path='/' element={<>
-              <Main_content />
-              <hr />
-              <Portfolio />
-            </>} />
-            <Route path='/git' element={<Githubapi />} />
-          </Routes>
-        </div>
-
-        <Footer /> 
-        </Router>
+      <> 
+        <Routes>
+          <Route path='/' Component={Main_Page} />
+          <Route path='/git' Component={Github_Page} />
+        </Routes>
       </>
-      
   );
 }
 

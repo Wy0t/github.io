@@ -1,5 +1,8 @@
 import React from 'react';
+import '.././css/Github_Page.css';
 import GitHubLogin from 'react-github-login';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const onSuccess = response => {
   console.log(response);
@@ -18,4 +21,16 @@ const GitHubOAuthButton = () => (
   />
 );
 
-export default GitHubOAuthButton;
+function Github_Page() {
+    return (
+        <> 
+          <Navbar />
+          <div className='Github'>
+          <GitHubOAuthButton></GitHubOAuthButton>
+          </div>
+          <Footer /> 
+        </>
+    );
+  }
+
+export default Github_Page;
